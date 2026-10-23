@@ -1,7 +1,9 @@
 The simulated blockchain has two clients. One is a listener which can produce a text-based status update whenever the blockchain notifies it of additions to the ledger and another the editor which can submit a text to the ledger.
 
 Important project files
+
 In blockchain: in /contracts is the contract definition source file and in ignition/modules is the code which provides a wrapper interface to the simulated blockchain for the blockchain clients
+
 In textsync: in src/main/java/com/textsync are the clients of the simulated blockchain
 
 How to run the program
