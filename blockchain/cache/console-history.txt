@@ -1,0 +1,8 @@
+const { ethers } = await hre.network.connect("localhost")
+const conn = await hre.network.connect()
+const blockNumber = await conn.provider.request({ method: "eth_blockNumber", params: [] })
+const conn = await hre.network.connect()
+Object.keys(hre.network)
+const blockCount = await hre.ethers.provider.getBlockNumber()
+const latest = await hre.ethers.provider.getBlockNumber()
+const latest = await ethers.provider.getBlockNumber()

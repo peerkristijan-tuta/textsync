@@ -1,0 +1,16 @@
+{
+  "/Users/peerkristijan/Desktop/blockchain/contracts/TextRegistry.sol": {
+    "jobHash": "solc-0_8_34-fec9f5f84fefe72162b060c145dc20c36723d884",
+    "isolated": false,
+    "compilerType": "solc",
+    "artifactPaths": [
+      "/Users/peerkristijan/Desktop/blockchain/artifacts/contracts/TextRegistry.sol/TextRegistry.json"
+    ],
+    "buildInfoPath": "/Users/peerkristijan/Desktop/blockchain/artifacts/build-info/solc-0_8_34-fec9f5f84fefe72162b060c145dc20c36723d884.json",
+    "buildInfoOutputPath": "/Users/peerkristijan/Desktop/blockchain/artifacts/build-info/solc-0_8_34-fec9f5f84fefe72162b060c145dc20c36723d884.output.json",
+    "typeFilePath": "/Users/peerkristijan/Desktop/blockchain/artifacts/contracts/TextRegistry.sol/artifacts.d.ts",
+    "wasm": false,
+    "artifactsDirectory": "/Users/peerkristijan/Desktop/blockchain/artifacts",
+    "emitsTypeDeclarations": true
+  }
+}

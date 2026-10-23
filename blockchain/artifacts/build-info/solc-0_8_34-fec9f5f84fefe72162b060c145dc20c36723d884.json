@@ -1,0 +1,42 @@
+{
+  "_format": "hh3-sol-build-info-1",
+  "id": "solc-0_8_34-fec9f5f84fefe72162b060c145dc20c36723d884",
+  "solcVersion": "0.8.34",
+  "solcLongVersion": "0.8.34+commit.80d5c536",
+  "compilerType": "solc",
+  "userSourceNameMap": {
+    "contracts/TextRegistry.sol": "project/contracts/TextRegistry.sol"
+  },
+  "input": {
+    "language": "Solidity",
+    "settings": {
+      "evmVersion": "osaka",
+      "outputSelection": {
+        "*": {
+          "": [
+            "ast"
+          ],
+          "*": [
+            "abi",
+            "evm.bytecode.linkReferences",
+            "evm.bytecode.object",
+            "evm.bytecode.opcodes",
+            "evm.bytecode.sourceMap",
+            "evm.deployedBytecode.immutableReferences",
+            "evm.deployedBytecode.linkReferences",
+            "evm.deployedBytecode.object",
+            "evm.deployedBytecode.opcodes",
+            "evm.deployedBytecode.sourceMap",
+            "evm.methodIdentifiers"
+          ]
+        }
+      },
+      "remappings": []
+    },
+    "sources": {
+      "project/contracts/TextRegistry.sol": {
+        "content": "pragma solidity ^0.8.0;\n\ncontract TextRegistry {\n    string[] private texts;\n    event textAdded(string hash);\n    event textRemoved(string hash);\n    \n    function addtext(string memory hash) public {\n        texts.push(hash);\n        emit textAdded(hash);\n    }\n\n    function removetext(string memory hash) public {\n        for (uint i = 0; i < texts.length; i++) {\n            if (keccak256(bytes(texts[i])) == keccak256(bytes(hash))) {\n                for (uint j = i; j < texts.length - 1; j++) {\n                    texts[j] = texts[j + 1];\n                }\n                texts.pop();\n                emit textRemoved(hash);\n                return;\n            }\n        }\n    }\n\n    function gettexts() public view returns (string[] memory) {\n        return texts;\n    }\n}"
+      }
+    }
+  }
+}
